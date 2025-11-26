@@ -1,0 +1,74 @@
+
+
+/* Margin — m{side}-{scale} */
+.m-0 { margin: 0 !important; }
+.m-1 { margin: 0.25rem !important; }      /* 4px */
+.m-2 { margin: 0.5rem !important; }       /* 8px */
+.m-3 { margin: 0.75rem !important; }      /* 12px */
+.m-4 { margin: 1rem !important; }         /* 16px */
+.m-5 { margin: 1.25rem !important; }      /* 20px */
+.m-6 { margin: 1.5rem !important; }       /* 24px */
+.m-8 { margin: 2rem !important; }         /* 32px */
+.m-10 { margin: 2.5rem !important; }      /* 40px */
+.m-12 { margin: 3rem !important; }        /* 48px */
+.m-16 { margin: 4rem !important; }        /* 64px */
+
+/* Vertical margin */
+.my-2 { margin-block: 0.5rem !important; }
+.my-4 { margin-block: 1rem !important; }
+.my-6 { margin-block: 1.5rem !important; }
+.my-8 { margin-block: 2rem !important; }
+.my-12 { margin-block: 3rem !important; }
+
+/* Horizontal margin */
+.mx-auto { margin-inline: auto !important; }
+
+/* Single side */
+.mt-0 { margin-top: 0 !important; }
+.mt-2 { margin-top: 0.5rem !important; }
+.mt-4 { margin-top: 1rem !important; }
+.mt-6 { margin-top: 1.5rem !important; }
+.mt-8 { margin-top: 2rem !important; }
+.mt-12 { margin-top: 3rem !important; }
+.mb-0 { margin-bottom: 0 !important; }
+.mb-2 { margin-bottom: 0.5rem !important; }
+.mb-4 { margin-bottom: 1rem !important; }
+.mb-6 { margin-bottom: 1.5rem !important; }
+.mb-8 { margin-bottom: 2rem !important; }
+.mb-12 { margin-bottom: 3rem !important; }
+
+/* Padding — p{side}-{scale} */
+.p-0 { padding: 0 !important; }
+.p-2 { padding: 0.5rem !important; }      /* 8px */
+.p-4 { padding: 1rem !important; }        /* 16px */
+.p-6 { padding: 1.5rem !important; }      /* 24px */
+.p-8 { padding: 2rem !important; }        /* 32px */
+
+.py-4 { padding-block: 1rem !important; }
+.py-6 { padding-block: 1.5rem !important; }
+.py-8 { padding-block: 2rem !important; }
+.py-12 { padding-block: 3rem !important; }
+
+.px-4 { padding-inline: 1rem !important; }
+.px-6 { padding-inline: 1.5rem !important; }
+
+/* Section-level spacing */
+.section-pt { padding-top: 5rem !important; }
+.section-pb { padding-bottom: 5rem !important; }
+
+@media (max-width: 768px) {
+  .section-pt,
+  .section-pb {
+    padding: 3rem 0 !important;
+  }
+  .my-12 { margin-block: 2rem !important; }
+  .mb-12 { margin-bottom: 2rem !important; }
+}
+
+/* Responsive spacing overrides */
+@media (max-width: 480px) {
+  .p-4 { padding: 0.75rem !important; }
+  .px-4 { padding-inline: 0.75rem !important; }
+  .my-8 { margin-block: 1.5rem !important; }
+  .mb-8 { margin-bottom: 1.5rem !important; }
+}
