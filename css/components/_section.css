@@ -1,0 +1,107 @@
+
+.section {
+  padding-block: 5rem;
+  position: relative;
+}
+
+.section--light {
+  background-color: var(--bg-secondary);
+}
+
+.section--dark {
+  background-color: var(--bg-tertiary);
+}
+
+.section-title {
+  font-size: clamp(1.875rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: 60ch;
+  margin: 0 auto 2rem;
+}
+
+.section-content {
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: 
+    radial-gradient(circle at 30% 30%, var(--accent) 0%, transparent 40%),
+    radial-gradient(circle at 70% 70%, var(--success) 0%, transparent 50%);
+  opacity: 0.05;
+  z-index: -1;
+}
+
+[data-theme="dark"] .hero::before {
+  opacity: 0.1;
+}
+
+/* Contact section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-info {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* About & Skills sections */
+.about-item,
+.skill-item {
+  margin-bottom: 1.5rem;
+}
+
+.about-item h3,
+.skill-item h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive section spacing */
+@media (max-width: 768px) {
+  .section {
+    padding-block: 3rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+}

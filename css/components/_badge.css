@@ -1,0 +1,71 @@
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+/* Default badge */
+.badge {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+/* Accent badges */
+.badge-accent {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+}
+
+/* Success badge */
+.badge-success {
+  background-color: var(--success);
+  color: white;
+  border: none;
+}
+
+/* Academic badge */
+.badge-academic {
+  background-color: #f59e0b; /* amber-500 */
+  color: #1f2937;
+  border: none;
+}
+
+/* Personal badge */
+.badge-personal {
+  background-color: #10b981; /* emerald-500 */
+  color: white;
+  border: none;
+}
+
+/* Dark mode override */
+[data-theme="dark"] .badge {
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .badge-academic {
+  background-color: #f59e0b;
+  color: #111827;
+}
+
+[data-theme="dark"] .badge-personal {
+  background-color: #34d399;
+  color: #111827;
+}
+
+/* Hover effect */
+.badge:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-sm);
+}
