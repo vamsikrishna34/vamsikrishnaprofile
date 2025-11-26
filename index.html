@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vamsi Krishna — Machine Learning Engineer specializing in Generative AI & NLP">
-  <title>Vamsi Krishna — ML Engineer</title>
+  <meta name="description" content="Nallagatla VamsiKrishna — Machine Learning Engineer specializing in Generative AI & NLP">
+  <title>Nallagatla VamsiKrishna — ML Engineer</title>
   
   <!-- Preload critical font -->
   <link rel="preload" href="assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -28,7 +28,6 @@
       <a href="#hero" class="text-xl font-bold no-underline text-accent">Nallagatla VamsiKrishna</a>
       
       <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle dark mode">
-        <!-- Icons loaded via inline SVG in JS -->
         <span class="theme-icon"></span>
       </button>
     </div>
@@ -38,7 +37,9 @@
   <nav class="nav">
     <div class="container flex justify-center">
       <ul class="nav-list flex gap-6">
+        <li><a href="#hero" class="nav-link">Home</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -49,15 +50,16 @@
   <!-- Hero -->
   <section id="hero" class="section hero">
     <div class="container text-center fade-up">
-      <h1 class="mb-4">Vamsi Krishna</h1>
+      <h1 class="mb-2">Nallagatla VamsiKrishna</h1>
       <p class="text-xl text-secondary mb-2">Machine Learning Engineer</p>
-      <p class="text-lg text-muted mb-6">Specializing in <strong>Generative AI & NLP</strong></p>
-      <p class="max-w-2xl mx-auto mb-8">
+      <p class="text-lg text-muted mb-4">Specializing in <strong>Generative AI & NLP</strong></p>
+      <p class="mb-2">Chicago, IL • OPT Start: Sep 9, 2025</p>
+      <p class="max-w-2xl mx-auto mb-6">
         Building end-to-end AI systems with Python, LangChain, and FastAPI — from research to production.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="https://github.com/your-username" class="btn btn-outline">GitHub</a>
+        <a href="https://github.com/YOUR_USERNAME" class="btn btn-outline">GitHub</a>
       </div>
     </div>
   </section>
@@ -75,17 +77,18 @@
           </div>
           <h3 class="h4 mb-2">Encountering Fake Messages</h3>
           <p class="mb-4">
-            Dual-input ML pipeline using EasyOCR + SVM/KNN to detect spam in text/images; 98.56% accuracy on 5,500+ samples.
+            Built a dual-input classification pipeline using EasyOCR and supervised ML models (SVM, Logistic Regression, KNN), achieving 98.56% accuracy across 5,500+ samples.
           </p>
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="badge">Python</span>
             <span class="badge">EasyOCR</span>
             <span class="badge">SVM</span>
+            <span class="badge">Logistic Regression</span>
             <span class="badge">KNN</span>
           </div>
           <ul class="text-sm text-muted space-y-1">
-            <li>• Built hybrid ML-OCR model for multi-modal spam detection</li>
-            <li>• Co-authored peer-reviewed publication</li>
+            <li>• Demonstrated real-world applications for secure messaging platforms</li>
+            <li>• Co-authored a peer-reviewed publication introducing a hybrid ML-OCR model</li>
           </ul>
         </article>
 
@@ -97,17 +100,18 @@
           </div>
           <h3 class="h4 mb-2">InsightAlert</h3>
           <p class="mb-4">
-            NLP tool to summarize transcripts & extract action items (>90% precision) using fine-tuned T5.
+            Built an NLP tool to summarize transcripts and extract action items with >90% precision; deployed via Hugging Face Spaces using Gradio.
           </p>
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="badge">Python</span>
             <span class="badge">T5</span>
+            <span class="badge">DistilBART</span>
             <span class="badge">Gradio</span>
-            <span class="badge">Hugging Face</span>
+            <span class="badge">Regex</span>
           </div>
           <ul class="text-sm text-muted space-y-1">
-            <li>• Preprocessing improved input quality by ~40%</li>
-            <li>• Dual-output: summary + action items</li>
+            <li>• Developed preprocessing to clean multi-speaker transcripts, improving input quality by ~40%</li>
+            <li>• Tested across 5+ meeting formats for consistency and adaptability</li>
           </ul>
           <div class="mt-4">
             <a href="https://huggingface.co/spaces/YOUR_USERNAME/insightalert" target="_blank" class="btn btn-sm btn-outline">
@@ -124,17 +128,19 @@
           </div>
           <h3 class="h4 mb-2">AutoPromptX</h3>
           <p class="mb-4">
-            Modular CLI & web toolkit for prompt engineering & agent orchestration with fallback logic.
+            Built a modular CLI & web toolkit for designing, testing, and chaining GPT prompts with real-time agent execution.
           </p>
           <div class="flex flex-wrap gap-2 mb-4">
-            <span class="badge">LangChain</span>
+            <span class="badge">Python</span>
             <span class="badge">FastAPI</span>
+            <span class="badge">T5 Transformers</span>
             <span class="badge">Docker</span>
-            <span class="badge">GitHub Pages</span>
+            <span class="badge">LangChain</span>
+            <span class="badge">Bootstrap 5</span>
           </div>
           <ul class="text-sm text-muted space-y-1">
-            <li>• Multi-agent workflow: summarizer, reviewer, persona</li>
-            <li>• SBERT + regex fallbacks</li>
+            <li>• Developed FastAPI backend for multi-agent workflows (summarizer, reviewer, persona)</li>
+            <li>• Deployed Dockerized backend on Hugging Face; frontend via GitHub Pages</li>
           </ul>
           <div class="mt-4 flex gap-2">
             <a href="https://github.com/YOUR_USERNAME/autopromptx" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
@@ -150,17 +156,20 @@
           </div>
           <h3 class="h4 mb-2">StratoMind</h3>
           <p class="mb-4">
-            AI platform converting CSV/PDF/DOCX into recruiter-ready insights using LangChain RAG & Streamlit.
+            Built a GenAI platform to convert CSV, PDF, and DOCX files into recruiter-ready insights using Python, LangChain, and Streamlit.
           </p>
           <div class="flex flex-wrap gap-2 mb-4">
+            <span class="badge">Python</span>
             <span class="badge">LangChain</span>
             <span class="badge">RAG</span>
-            <span class="badge">Streamlit</span>
             <span class="badge">LangGraph</span>
+            <span class="badge">Streamlit</span>
+            <span class="badge">XGBoost</span>
+            <span class="badge">Apache Spark</span>
           </div>
           <ul class="text-sm text-muted space-y-1">
-            <li>• Schema-agnostic ETL with null-safe logic</li>
-            <li>• Demo-resilient & onboarding-optimized UI</li>
+            <li>• Developed unified ETL pipeline with schema-agnostic feature extraction</li>
+            <li>• Designed modular UI with onboarding clarity and explainable overlays</li>
           </ul>
         </article>
 
@@ -172,25 +181,44 @@
           </div>
           <h3 class="h4 mb-2">ReguLens</h3>
           <p class="mb-4">
-            Interpretable compliance system: XGBoost for gap detection + RAG (Phi-3) for remediation — no black-box LLMs.
+            Engineered a production-grade system leveraging interpretable XGBoost for fast compliance gap detection and RAG (Phi-3 + ChromaDB) for human-readable remediation.
           </p>
           <div class="flex flex-wrap gap-2 mb-4">
+            <span class="badge">Python</span>
             <span class="badge">XGBoost</span>
             <span class="badge">RAG</span>
             <span class="badge">LangGraph</span>
+            <span class="badge">Streamlit</span>
             <span class="badge">Spring Boot</span>
+            <span class="badge">Kafka</span>
           </div>
           <ul class="text-sm text-muted space-y-1">
-            <li>• Legal-aware feature engineering (Regex/AST on SEC/GDPR)</li>
-            <li>• Zero-cost MLOps: Spring Boot + Kafka + CI/CD</li>
+            <li>• Developed legal-aware feature engineering using Regex/AST on SEC/GDPR clauses</li>
+            <li>• Deployed via zero-cost MLOps pipeline with Spring Boot/Kafka</li>
           </ul>
         </article>
       </div>
     </div>
   </section>
 
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container max-w-3xl fade-up">
+      <h2 class="text-center mb-8">Experience</h2>
+      
+      <div class="mb-8">
+        <h3 class="h4 mb-1">Software Developer (Full Stack)</h3>
+        <p class="text-muted mb-2"><strong>RND4IMPACT, Inc.</strong> — Scientific Research Nonprofit (501(c)(3)) | Nov 2025–Present</p>
+        <ul class="space-y-1">
+          <li>• Spearheaded full-stack application development, architecting backend with Java and Python (Flask/Django) for scalable microservices</li>
+          <li>• Engineered seamless data integration via RESTful APIs between server and responsive JavaScript frontends</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- About -->
-  <section id="about" class="section">
+  <section id="about" class="section section--light">
     <div class="container max-w-3xl fade-up">
       <h2 class="text-center mb-8">About</h2>
       
@@ -201,58 +229,64 @@
 
       <h3 class="h4 mb-4">Education</h3>
       <ul class="mb-6 space-y-2">
-        <li><strong>M.S. Computer Science</strong> — DePaul University (Jun 2025) | GPA: 3.0/4.0</li>
-        <li><strong>B.Tech CSE</strong> — GITAM University (Jul 2023) | GPA: 2.9/4.0</li>
+        <li><strong>M.S. Computer Science</strong> — DePaul University | Graduated: Jun 2025</li>
+        <li><strong>B.Tech CSE</strong> — GITAM University | Graduated: Jul 2023</li>
       </ul>
 
       <h3 class="h4 mb-4">Certifications</h3>
       <ul class="space-y-2">
         <li>AWS Certified Cloud Practitioner</li>
-        <li>Coursera: Data Analysis with Python, Agile Software Development</li>
-        <li>HackerRank: SQL, Python, Problem Solving (Basic)</li>
+        <li>Coursera: Data Analysis with Python, Agile Software Development, Database Management Essentials</li>
+        <li>HackerRank: SQL (Basic), Python (Basic), Problem Solving (Basic)</li>
+      </ul>
+
+      <h3 class="h4 mb-4">Publications</h3>
+      <ul class="space-y-2">
+        <li><strong>Encountering Fake Messages from Text or Image Using Machine Learning</strong> — Peer-reviewed academic paper</li>
+        <li><strong>Automatic Language Identification and Conversion System</strong> — IJRAR, Vol. 10, Issue 2, 2023</li>
       </ul>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="section section--light">
+  <section id="skills" class="section">
     <div class="container">
       <h2 class="text-center mb-12 fade-up">Technical Skills</h2>
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         <div class="fade-up">
-          <h3 class="h5 mb-3">Generative AI & NLP</h3>
-          <p>LangChain, LangGraph, RAG, Hugging Face (T5, DistilBART), Prompt Engineering, Regex</p>
+          <h3 class="h5 mb-3">Programming & Databases</h3>
+          <p>Python (Advanced), Java, JavaScript, TypeScript, SQL</p>
         </div>
         <div class="fade-up">
-          <h3 class="h5 mb-3">ML & Data</h3>
-          <p>PyTorch, XGBoost, Scikit-learn, Pandas, Apache Spark, ETL, A/B Testing</p>
+          <h3 class="h5 mb-3">Generative AI & NLP</h3>
+          <p>LangChain, LangGraph, RAG, Hugging Face Transformers (T5, DistilBART), Prompt Engineering, Regex</p>
+        </div>
+        <div class="fade-up">
+          <h3 class="h5 mb-3">Data & ML</h3>
+          <p>PyTorch, TensorFlow, XGBoost, Scikit-learn, Pandas, NumPy, Apache Spark, ETL, A/B Testing</p>
         </div>
         <div class="fade-up">
           <h3 class="h5 mb-3">Backend & APIs</h3>
-          <p>FastAPI, Flask, Django, Spring Boot, REST, Kafka, AST Parsing</p>
+          <p>FastAPI, Flask, Django, Spring Boot, RESTful APIs, Apache Kafka, AST Parsing</p>
         </div>
         <div class="fade-up">
           <h3 class="h5 mb-3">Cloud & DevOps</h3>
-          <p>AWS (S3, Lambda, EC2), Docker, GitHub Actions, Hugging Face Spaces</p>
+          <p>AWS (S3, Lambda, EC2), Docker, GitHub Actions, CI/CD, Hugging Face Spaces</p>
         </div>
         <div class="fade-up">
           <h3 class="h5 mb-3">Frontend & Tools</h3>
-          <p>Streamlit, Gradio, HTML/CSS, Bootstrap 5, Power BI, VS Code</p>
-        </div>
-        <div class="fade-up">
-          <h3 class="h5 mb-3">Languages</h3>
-          <p>Python (Advanced), Java, JavaScript, TypeScript, SQL</p>
+          <p>Streamlit, Gradio, HTML/CSS, Bootstrap 5, Power BI, VS Code, Jupyter</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section">
+  <section id="contact" class="section section--light">
     <div class="container text-center fade-up">
       <h2 class="mb-6">Contact</h2>
-      <p class="text-xl mb-2">Chicago, IL • OPT Start: Sep 9, 2025</p>
+      <p class="text-xl mb-2">Chicago, IL • +1 (872) 325-6230</p>
       <div class="flex flex-wrap justify-center gap-3 mt-6">
         <a href="mailto:nvamsi.krishna2001@gmail.com" class="btn btn-outline">
           <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876L9 8.673l-4.964 2.981L4 11.654V8.673l4.964-2.981L13.932 8.673v2.981Z"/></svg>
@@ -273,7 +307,7 @@
   <!-- Footer -->
   <footer class="py-6 border-t border-muted text-center text-muted text-sm">
     <div class="container">
-      © <span id="year">2025</span> Vamsi Krishna. Built with HTML, CSS & JavaScript.
+      © <span id="year">2025</span> Nallagatla VamsiKrishna. Built with HTML, CSS & JavaScript.
     </div>
   </footer>
 
