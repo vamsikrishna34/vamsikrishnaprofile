@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Vamsi Krishna — Projects in Generative AI & NLP">
+  <title>Projects — Vamsi Krishna</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header sticky">
+    <div class="container flex justify-between items-center py-4">
+      <a href="index.html" class="text-xl font-bold no-underline text-accent">Nallagatla VamsiKrishna</a>
+      <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle dark mode">
+        <span class="theme-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container flex justify-center">
+      <ul class="nav-list flex gap-6">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="experience.html" class="nav-link">Experience</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="section section--light">
+    <div class="container">
+      <h2 class="text-center mb-12 fade-up">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <article class="project-card fade-up">
+          <div class="project-card__header">
+            <span class="badge badge-academic">Academic</span>
+            <span class="text-sm text-muted">Aug 2022 – Oct 2022</span>
+          </div>
+          <h3 class="h4 mb-2">Encountering Fake Messages from Text or Image</h3>
+          <p class="mb-4">
+            Built a dual-input classification pipeline using EasyOCR and supervised ML models (SVM, Logistic Regression, Naive Bayes, KNN), achieving 98.56% accuracy across 5,500+ samples.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="badge">Python</span>
+            <span class="badge">EasyOCR</span>
+            <span class="badge">SVM</span>
+            <span class="badge">Logistic Regression</span>
+            <span class="badge">Naive Bayes</span>
+            <span class="badge">KNN</span>
+          </div>
+          <ul class="text-sm text-muted space-y-1">
+            <li>• Demonstrated real-world applications for secure messaging platforms through effective content filtering strategies</li>
+            <li>• Co-authored a peer-reviewed publication introducing a hybrid ML-OCR model to detect spam in both textual and visual formats</li>
+          </ul>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card fade-up">
+          <div class="project-card__header">
+            <span class="badge badge-personal">Personal</span>
+            <span class="text-sm text-muted">Jan 2025 – Feb 2025</span>
+          </div>
+          <h3 class="h4 mb-2">InsightAlert — Meeting Summarizer & Action Item Extractor</h3>
+          <p class="mb-4">
+            Built an NLP tool to summarize transcripts and extract action items with >90% precision; deployed via Hugging Face Spaces using Gradio.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="badge">Python</span>
+            <span class="badge">T5</span>
+            <span class="badge">DistilBART</span>
+            <span class="badge">Gradio</span>
+            <span class="badge">Regex</span>
+          </div>
+          <ul class="text-sm text-muted space-y-1">
+            <li>• Developed preprocessing to clean multi-speaker transcripts, improving input quality by ~40% and enabling dual-output generation with fine-tuned T5</li>
+            <li>• Tested summarization and extraction across 5+ meeting formats to validate consistency and adaptability</li>
+          </ul>
+          <div class="mt-4">
+            <a href="https://huggingface.co/spaces/YOUR_USERNAME/insightalert" target="_blank" class="btn btn-sm btn-outline">
+              Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card fade-up">
+          <div class="project-card__header">
+            <span class="badge badge-personal">Personal</span>
+            <span class="text-sm text-muted">Apr 2025 – May 2025</span>
+          </div>
+          <h3 class="h4 mb-2">AutoPromptX — GenAI Prompt Engineering & Orchestration Toolkit</h3>
+          <p class="mb-4">
+            Built a modular CLI & web toolkit for designing, testing, and chaining GPT prompts with real-time agent execution.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="badge">Python</span>
+            <span class="badge">FastAPI</span>
+            <span class="badge">T5 Transformers</span>
+            <span class="badge">Docker</span>
+            <span class="badge">LangChain</span>
+            <span class="badge">Bootstrap 5</span>
+            <span class="badge">HTML/CSS/JS</span>
+          </div>
+          <ul class="text-sm text-muted space-y-1">
+            <li>• Developed a FastAPI backend for multi-agent workflows (summarizer, reviewer, persona) with fallback using semantic similarity & regex</li>
+            <li>• Deployed Dockerized backend on Hugging Face Spaces and served Bootstrap 5 frontend via GitHub Pages</li>
+          </ul>
+          <div class="mt-4 flex gap-2">
+            <a href="https://github.com/YOUR_USERNAME/autopromptx" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
+            <a href="https://YOUR_USERNAME.github.io/autopromptx" target="_blank" class="btn btn-sm btn-primary">Demo</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card fade-up">
+          <div class="project-card__header">
+            <span class="badge badge-personal">Personal</span>
+            <span class="text-sm text-muted">Aug 2025 – Sep 2025</span>
+          </div>
+          <h3 class="h4 mb-2">StratoMind — AI-Powered Strategy Assistant</h3>
+          <p class="mb-4">
+            Built a GenAI platform to convert CSV, PDF, and DOCX files into recruiter-ready insights using Python, LangChain, and Streamlit.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="badge">Python</span>
+            <span class="badge">LangChain</span>
+            <span class="badge">RAG</span>
+            <span class="badge">LangGraph</span>
+            <span class="badge">Streamlit</span>
+            <span class="badge">XGBoost</span>
+            <span class="badge">Apache Spark</span>
+            <span class="badge">ETL</span>
+          </div>
+          <ul class="text-sm text-muted space-y-1">
+            <li>• Developed a unified ETL pipeline with schema-agnostic feature extraction and null-safe, demo-resilient logic</li>
+            <li>• Designed a modular UI with onboarding clarity, dashboard layout, and explainable prediction overlays</li>
+          </ul>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card fade-up">
+          <div class="project-card__header">
+            <span class="badge badge-personal">Personal</span>
+            <span class="text-sm text-muted">Nov 2025 – Present</span>
+          </div>
+          <h3 class="h4 mb-2">ReguLens — AI-Powered Regulatory Compliance Assistant</h3>
+          <p class="mb-4">
+            Engineered a production-grade system leveraging interpretable XGBoost for fast compliance gap detection and RAG (Phi-3 + ChromaDB) for human-readable remediation, ensuring explainable decision-making and avoiding black-box LLMs.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="badge">Python</span>
+            <span class="badge">XGBoost</span>
+            <span class="badge">RAG</span>
+            <span class="badge">LangGraph</span>
+            <span class="badge">Streamlit</span>
+            <span class="badge">Spring Boot</span>
+            <span class="badge">Java</span>
+            <span class="badge">Kafka</span>
+          </div>
+          <ul class="text-sm text-muted space-y-1">
+            <li>• Developed legal-aware feature engineering using Regex/AST heuristics on real-world SEC/GDPR clauses</li>
+            <li>• Deployed via a zero-cost, containerized MLOps pipeline with Spring Boot/Kafka for async scalability</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 border-t border-muted text-center text-muted text-sm">
+    <div class="container">
+      © <span id="year">2025</span> Nallagatla VamsiKrishna. Built with HTML, CSS & JavaScript.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

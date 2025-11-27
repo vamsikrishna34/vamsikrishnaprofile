@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Vamsi Krishna — Professional Experience in Software Development">
+  <title>Experience — Vamsi Krishna</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header sticky">
+    <div class="container flex justify-between items-center py-4">
+      <a href="index.html" class="text-xl font-bold no-underline text-accent">Nallagatla VamsiKrishna</a>
+      <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle dark mode">
+        <span class="theme-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container flex justify-center">
+      <ul class="nav-list flex gap-6">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="experience.html" class="nav-link">Experience</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Experience Section -->
+  <section class="section">
+    <div class="container max-w-3xl fade-up">
+      <h2 class="text-center mb-8">Experience</h2>
+      
+      <div class="mb-8">
+        <h3 class="h4 mb-1">Software Developer (Full Stack)</h3>
+        <p class="text-muted mb-2"><strong>RND4IMPACT, Inc.</strong> — Scientific Research Nonprofit (501(c)(3)) | Nov 2025 – Present</p>
+        <ul class="space-y-1">
+          <li>• Spearheaded full-stack application development for a scientific research non-profit, architecting the backend with Java for complex business logic and Python (Flask/Django) for scalable microservices</li>
+          <li>• Engineered seamless data integration by designing and maintaining RESTful APIs, ensuring secure communication between the server and responsive frontends built with modern JavaScript frameworks</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 border-t border-muted text-center text-muted text-sm">
+    <div class="container">
+      © <span id="year">2025</span> Nallagatla VamsiKrishna. Built with HTML, CSS & JavaScript.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
